@@ -1,0 +1,140 @@
+
+.projects {
+    padding: 70px 10%;
+    background: #101620;
+    text-align: center;
+}
+
+.projects h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.projects h2 span {
+    color: #00ff88;
+}
+
+.subtitle {
+    color: #aaaaaa;
+    margin-bottom: 35px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #0a0d14;
+    padding: 25px;
+    border: 1px solid #26313d;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.category {
+    color: #00ff88;
+    font-size: 13px;
+}
+
+.project-card h3 {
+    color: white;
+    margin: 15px 0;
+}
+
+.description {
+    color: #aaaaaa;
+    line-height: 1.7;
+}
+
+.status {
+    color: #00ff88;
+    margin: 15px 0;
+}
+
+.project-card button {
+    background: #00ff88;
+    color: #0a0d14;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.project-card button:hover {
+    background: white;
+}
+
+.project-details {
+    position: relative;
+    margin-top: 35px;
+    padding: 35px;
+    background: #0a0d14;
+    border: 1px solid #00ff88;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.project-details h2 {
+    text-align: left;
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+
+.project-details h3 {
+    color: white;
+    margin: 20px 0 12px;
+}
+
+.project-details p,
+.project-details li {
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.project-details ul {
+    padding-left: 20px;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.technology-list span {
+    background: #17251f;
+    color: #00ff88;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.project-details a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #00ff88;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-details {
+        padding: 25px 18px;
+    }
+}

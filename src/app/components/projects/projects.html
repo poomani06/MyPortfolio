@@ -1,0 +1,80 @@
+
+<section class="projects" id="projects">
+
+  <h2>My <span>Projects</span></h2>
+
+  <p class="subtitle">
+    Some of the projects I have worked on.
+  </p>
+
+  <div class="project-container">
+
+    @for (project of projects; track project.title) {
+
+      <div class="project-card">
+
+        <p class="category">{{ project.category }}</p>
+
+        <h3>{{ project.title }}</h3>
+
+        <p class="description">
+          {{ project.description }}
+        </p>
+
+        <p class="status">
+          Status: {{ project.status }}
+        </p>
+
+        <button (click)="viewDetails(project)">
+          Read More
+        </button>
+
+      </div>
+
+    }
+
+  </div>
+
+  @if (selectedProject) {
+
+    <div class="project-details">
+
+      <button class="close-button" (click)="closeDetails()">
+        ✕
+      </button>
+
+      <h2>{{ selectedProject.title }}</h2>
+
+      <p>{{ selectedProject.description }}</p>
+
+      <h3>Technologies Used</h3>
+
+      <div class="technology-list">
+        @for (tech of selectedProject.technologies; track tech) {
+          <span>{{ tech }}</span>
+        }
+      </div>
+
+      <h3>Project Features</h3>
+
+      <ul>
+        @for (feature of selectedProject.features; track feature) {
+          <li>{{ feature }}</li>
+        }
+      </ul>
+
+      <p class="status">
+        Status: {{ selectedProject.status }}
+      </p>
+
+      <a href="https://github.com/poomani06"
+         target="_blank"
+         rel="noopener noreferrer">
+        Visit My GitHub
+      </a>
+
+    </div>
+
+  }
+
+</section>
