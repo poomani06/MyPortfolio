@@ -18,3 +18,16 @@ body {
 main {
     width: 100%;
 }
+
+.footer {
+    padding: 25px;
+    text-align: center;
+    background: #0a0d14;
+    border-top: 1px solid #26313d;
+}
+
+.footer p {
+    color: #888888;
+    font-size: 13px;
+    margin: 8px;
+}

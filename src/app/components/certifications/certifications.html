@@ -1,0 +1,22 @@
+
+<section class="certifications" id="certifications">
+
+  <h2>My <span>Certifications</span></h2>
+
+  <div class="certificate-container">
+
+    @for (certificate of certificates; track certificate) {
+
+      <div class="certificate-card">
+
+        <span class="certificate-icon">🏆</span>
+
+        <p>{{ certificate }}</p>
+
+      </div>
+
+    }
+
+  </div>
+
+</section>

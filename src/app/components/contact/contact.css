@@ -1,0 +1,55 @@
+
+.contact {
+    padding: 70px 10%;
+    background: #101620;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contact h2 span {
+    color: #00ff88;
+}
+
+.contact > p {
+    color: #aaaaaa;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background: #0a0d14;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.contact-card h3 {
+    color: #00ff88;
+    margin-bottom: 15px;
+}
+
+.contact-card a {
+    color: #cccccc;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+    color: #00ff88;
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+}

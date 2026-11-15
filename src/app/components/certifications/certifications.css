@@ -1,0 +1,45 @@
+
+.certifications {
+    padding: 70px 10%;
+}
+
+.certifications h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.certifications h2 span {
+    color: #00ff88;
+}
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.certificate-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #101620;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.certificate-icon {
+    font-size: 25px;
+}
+
+.certificate-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .certificate-container {
+        grid-template-columns: 1fr;
+    }
+}
