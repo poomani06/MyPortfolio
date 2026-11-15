@@ -1,0 +1,104 @@
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #00ff88;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.home h1 {
+    color: white;
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.home h1 span {
+    color: #00ff88;
+}
+
+.home h2 {
+    color: #cccccc;
+    font-size: 23px;
+}
+
+.description {
+    color: #aaaaaa;
+    line-height: 1.8;
+    margin: 25px 0;
+}
+
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #00ff88;
+    color: #0a0d14;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.resume-btn {
+    background: transparent;
+    color: #00ff88;
+    border: 1px solid #00ff88;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-card img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #00ff88;
+}
+
+@media (max-width: 768px) {
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 7%;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .home-buttons,
+    .social-links {
+        justify-content: center;
+    }
+
+    .profile-card img {
+        width: 230px;
+        height: 270px;
+    }
+}
